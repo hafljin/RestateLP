@@ -9,9 +9,10 @@ export interface ContactFormProps {
     phone?: string;
   }) => Promise<void>;
   properties: string[];
+  recaptcha?: boolean;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({ onSubmit, properties }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ onSubmit, properties, recaptcha }) => {
   const [form, setForm] = useState({ name: '', email: '', message: '', property: '', phone: '' });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
@@ -58,6 +59,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSubmit, properties }) => {
         <textarea id="message" name="message" value={form.message} onChange={handleChange} className="w-full border rounded px-3 py-2" required aria-required="true" />
       </div>
       {error && <div className="text-red-500 mb-2" role="alert">{error}</div>}
+      {recaptcha && (
+        <div className="mb-4 text-center">
+          {/* ダミーreCAPTCHA */}
+          <span className="inline-block bg-gray-200 px-4 py-2 rounded">[reCAPTCHA]</span>
+        </div>
+      )}
       <button type="submit" className="bg-main text-white px-6 py-2 rounded w-full">送信</button>
     </form>
   );
