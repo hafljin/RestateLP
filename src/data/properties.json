@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p-001",
+    "title": "サンシャインタワー 2LDK",
+    "price": "5,200万円",
+    "area": "東京都新宿区",
+    "floor_area": "68㎡",
+    "images": ["/assets/prop1-1.jpg", "/assets/prop1-2.jpg"],
+    "description": "駅徒歩3分・南向き・ペット可。",
+    "tags": ["駅近", "南向き"]
+  },
+  {
+    "id": "p-002",
+    "title": "グリーンヒルズ 1K",
+    "price": "2,480万円",
+    "area": "東京都世田谷区",
+    "floor_area": "32㎡",
+    "images": ["/assets/prop2-1.jpg", "/assets/prop2-2.jpg"],
+    "description": "リフォーム済・角部屋・眺望良好。",
+    "tags": ["リフォーム済", "角部屋"]
+  },
+  {
+    "id": "p-003",
+    "title": "パークレジデンス 3LDK",
+    "price": "6,800万円",
+    "area": "東京都港区",
+    "floor_area": "80㎡",
+    "images": ["/assets/prop3-1.jpg", "/assets/prop3-2.jpg"],
+    "description": "高層階・眺望抜群・24時間セキュリティ。",
+    "tags": ["高層階", "セキュリティ"]
+  }
+]
