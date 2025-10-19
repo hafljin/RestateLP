@@ -42,6 +42,21 @@ npm run build
 - Vercel推奨: `vercel --prod`
 - またはGitHubへpush
 
+### Vercel でのデプロイ手順
+
+1. GitHub リポジトリ（https://github.com/hafljin/RestateLP）を用意済みであることを確認します。
+2. Vercel にログインし、`New Project` → `Import Git Repository` を選択してリポジトリをインポートします。
+3. ビルドコマンド: `npm run build`、出力ディレクトリ: `dist` を指定（Vercel は自動推奨する場合があります）。
+4. 環境変数が必要な場合は Vercel のダッシュボードで設定します（例: `VITE_FORMSPREE_ENDPOINT`）。
+5. `Deploy` をクリックすると自動でデプロイされます。
+
+CLI からはローカルで以下を実行してデプロイできます:
+
+```bash
+npx vercel login
+npx vercel --prod
+```
+
 ## 環境変数
 `.env.example` を参照し、必要に応じて `.env` を作成してください。
 
